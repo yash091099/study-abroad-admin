@@ -23,8 +23,8 @@ import ApplicationStatusPage from "./pages/application-status-page";
 import ScholarshipManagement from "./pages/scholarship-management";
 import UserManagement from "./pages/user-management";
 import AdminChangePassword from "./pages/admin-change-password";
-import ApplicationManagement from "./pages/application-management";
 import BlogManagement from "./pages/blog-management";
+import ApplicationManagement from "./pages/application-management";
 
 function App() {
   const action = useNavigationType();
@@ -114,11 +114,11 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/applicationmanagement":
+      case "/blogmanagement":
         title = "";
         metaDescription = "";
         break;
-      case "/blogmanagement":
+      case "/applicationmanagement":
         title = "";
         metaDescription = "";
         break;
@@ -179,11 +179,11 @@ function App() {
       />
       <Route path="/user-management" element={<UserManagement />} />
       <Route path="/admin-change-password" element={<AdminChangePassword />} />
+      <Route path="/blogmanagement" element={<BlogManagement />} />
       <Route
         path="/applicationmanagement"
         element={<ApplicationManagement />}
       />
-      <Route path="/blogmanagement" element={<BlogManagement />} />
     </Routes>
   );
 }

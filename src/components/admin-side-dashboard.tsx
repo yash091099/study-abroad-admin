@@ -1,8 +1,4 @@
 import { FunctionComponent } from "react";
-import StateNotChecked from "./state-not-checked";
-import CellTypeCheckbox from "./cell-type-checkbox";
-import CellTypeAvatarText from "./cell-type-avatar-text";
-import CellTypeText from "./cell-type-text";
 
 const AdminSideDashboard: FunctionComponent = () => {
   return (
@@ -177,18 +173,15 @@ const AdminSideDashboard: FunctionComponent = () => {
         <div className="w-[60.188rem] flex flex-row items-center justify-start">
           <div className="flex-1 relative font-semibold">Recent Students</div>
         </div>
-        <div className="self-stretch flex flex-col items-start justify-start text-[0.813rem] font-light-button-2-button-default">
-          <div className="self-stretch flex flex-row items-center justify-start border-[1px] border-solid border-gainsboro-100">
-            <div className="flex flex-row items-center justify-start py-[0.938rem] pr-[0.625rem] pl-[1.25rem]">
-              <StateNotChecked
-                selectAllCourses={false}
-                stateNotCheckedGap="0.375rem"
-                formCheckboxButtonWidth="1.125rem"
-                formCheckboxButtonHeight="1.125rem"
-                textWidth="1.938rem"
-                textFontSize="0.938rem"
-                textLineHeight="1.375rem"
-              />
+        <div className="self-stretch flex flex-col items-start justify-start text-[0.938rem] font-light-button-2-button-default">
+          <div className="self-stretch flex flex-row items-center justify-start text-[0.813rem] border-[1px] border-solid border-gainsboro-100">
+            <div className="flex flex-row items-center justify-start py-[0.938rem] pr-[0.625rem] pl-[1.25rem] text-[0.938rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
             </div>
             <div className="self-stretch w-[16.25rem] flex flex-row items-center justify-start py-[0.5rem] px-[1.25rem] box-border gap-[0.25rem]">
               <div className="flex-1 relative tracking-[1px] uppercase font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.1),_rgba(255,_255,_255,_0.1)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
@@ -277,114 +270,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"
@@ -399,114 +333,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"
@@ -521,114 +396,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"
@@ -643,114 +459,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"
@@ -765,114 +522,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"
@@ -912,18 +610,15 @@ const AdminSideDashboard: FunctionComponent = () => {
         <div className="w-[60.188rem] flex flex-row items-center justify-start">
           <div className="flex-1 relative font-semibold">Recent Educators</div>
         </div>
-        <div className="self-stretch flex flex-col items-start justify-start text-[0.813rem] font-light-button-2-button-default">
-          <div className="self-stretch flex flex-row items-center justify-start border-[1px] border-solid border-gainsboro-100">
-            <div className="flex flex-row items-center justify-start py-[0.938rem] pr-[0.625rem] pl-[1.25rem]">
-              <StateNotChecked
-                selectAllCourses={false}
-                stateNotCheckedGap="0.375rem"
-                formCheckboxButtonWidth="1.125rem"
-                formCheckboxButtonHeight="1.125rem"
-                textWidth="1.938rem"
-                textFontSize="0.938rem"
-                textLineHeight="1.375rem"
-              />
+        <div className="self-stretch flex flex-col items-start justify-start text-[0.938rem] font-light-button-2-button-default">
+          <div className="self-stretch flex flex-row items-center justify-start text-[0.813rem] border-[1px] border-solid border-gainsboro-100">
+            <div className="flex flex-row items-center justify-start py-[0.938rem] pr-[0.625rem] pl-[1.25rem] text-[0.938rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
             </div>
             <div className="self-stretch w-[16.25rem] flex flex-row items-center justify-start py-[0.5rem] px-[1.25rem] box-border gap-[0.25rem]">
               <div className="flex-1 relative tracking-[1px] uppercase font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.1),_rgba(255,_255,_255,_0.1)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
@@ -1012,114 +707,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"
@@ -1134,114 +770,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"
@@ -1256,114 +833,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"
@@ -1378,114 +896,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"
@@ -1500,114 +959,55 @@ const AdminSideDashboard: FunctionComponent = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-            <CellTypeCheckbox
-              selectCourse={false}
-              cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-              formCheckboxGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-              cellTypeCheckboxHeight="unset"
-              cellTypeCheckboxWidth="unset"
-              cellTypeCheckboxDisplay="flex"
-              cellTypeCheckboxFlexDirection="row"
-              cellTypeCheckboxMargin="unset"
-              cellTypeCheckboxAlignSelf="unset"
-              cellTypeCheckboxFlex="unset"
-              selectAllCourses={false}
-            />
-            <CellTypeAvatarText
-              studentName="/avatar@2x.png"
-              onePlus7Pro="Edgar Jones"
-              onePlus="Student"
-              showOnePlus
-              cellTypeAvatarTextPadding="0.563rem 1.25rem"
-              cellTypeAvatarTextGap="0.625rem"
-              cellTypeAvatarTextWidth="16.25rem"
-              cellTypeAvatarTextHeight="4.938rem"
-              avatarWidth="2rem"
-              avatarHeight="2rem"
-              backgroundBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #7367f0"
-              onePlus7ProFontSize="0.938rem"
-              onePlus7ProLineHeight="1.375rem"
-              onePlusFontSize="0.813rem"
-              onePlusLineHeight="1.25rem"
-              onePlusMarginTop="-0.125rem"
-              cellTypeAvatarTextFlex="unset"
-              onePlus7ProMinWidth="unset"
-              onePlusMinWidth="unset"
-              onePlusWidth="unset"
-            />
-            <CellTypeText
-              email="Ejones@gmail.com"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Bangalore, Karnatka"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="unset"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="+91-937373638"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
-            <CellTypeText
-              email="Dec 12, 2023"
-              cellTypeTextPadding="1.125rem 1.25rem"
-              cellTypeTextWidth="16.25rem"
-              cellTypeTextHeight="4.938rem"
-              tableCellFontSize="0.938rem"
-              tableCellLineHeight="1.375rem"
-              tableCellFlex="1"
-              cellTypeTextFlex="unset"
-              cellTypeTextOpacity="unset"
-              tableCellBackground="linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #4b465c"
-              tableCellWebkitBackgroundClip="unset"
-              tableCellWebkitTextFillColor="unset"
-              tableCellColor="unset"
-              tableCellFontWeight="unset"
-              tableCellTextDecoration="unset"
-            />
+            <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+              <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+                <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+                <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                  Text
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[0.563rem] px-[1.25rem] box-border gap-[0.625rem]">
+              <div className="w-[2rem] relative rounded-81xl h-[2rem] overflow-hidden shrink-0">
+                <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+                  <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#7367f0]" />
+                  <div className="absolute h-[80.63%] w-[80.63%] top-[9.69%] right-[9.69%] bottom-[9.69%] left-[9.69%] rounded-81xl bg-gray1-300" />
+                </div>
+                <img
+                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+                  alt=""
+                  src="/avatar@2x.png"
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.375rem] font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                  Edgar Jones
+                </div>
+                <div className="relative text-[0.813rem] leading-[1.25rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.5),_rgba(255,_255,_255,_0.5)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mt-[-0.125rem]">
+                  Student
+                </div>
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Ejones@gmail.com
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Bangalore, Karnatka
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                +91-937373638
+              </div>
+            </div>
+            <div className="w-[16.25rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+              <div className="flex-1 relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                Dec 12, 2023
+              </div>
+            </div>
             <div className="hidden flex-row items-center justify-start py-[1.125rem] px-[1.25rem] gap-[1rem]">
               <img
                 className="w-[1.375rem] relative h-[1.375rem]"

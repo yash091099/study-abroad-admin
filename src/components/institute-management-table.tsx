@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import SquarePlusIcon from "../pages/square-plus-icon";
 import DataTable from "./data-table";
 
 const InstituteManagementTable: FunctionComponent = () => {
@@ -20,11 +21,7 @@ const InstituteManagementTable: FunctionComponent = () => {
             </div>
           </button>
           <button className="cursor-pointer py-[0.5rem] px-[1.188rem] bg-[transparent] h-[2.25rem] w-[5.75rem] rounded-lg box-border flex flex-row items-center justify-start gap-[0.5rem] border-[1px] border-solid border-primary-1 hover:bg-crimson-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-crimson-100">
-            <img
-              className="h-[1.25rem] w-[1.25rem] relative z-[unset]"
-              alt=""
-              src="/squareplus.svg"
-            />
+            <SquarePlusIcon />
             <div className="w-[1.5rem] relative text-[0.75rem] font-semibold font-noto-sans text-gray1-200 text-center flex items-center justify-center min-w-[1.5rem]">
               Add
             </div>

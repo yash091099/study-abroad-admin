@@ -1,12 +1,9 @@
 import { FunctionComponent } from "react";
-import StateNotChecked from "./state-not-checked";
-import CellTypeCheckbox from "./cell-type-checkbox";
-import CellTypeText from "./cell-type-text";
 
 const BlogList: FunctionComponent = () => {
   return (
-    <div className="self-stretch rounded-lg bg-white shadow-[0px_4px_18px_rgba(75,_70,_92,_0.1),_0px_2px_4px_rgba(165,_163,_174,_0.3)] flex flex-col items-start justify-start p-[2rem] gap-[1.5rem] text-left text-[0.75rem] text-gray1-200 font-noto-sans">
-      <div className="self-stretch flex flex-row items-center justify-start gap-[2.125rem] text-[1.5rem]">
+    <div className="self-stretch rounded-lg bg-white shadow-[0px_4px_18px_rgba(75,_70,_92,_0.1),_0px_2px_4px_rgba(165,_163,_174,_0.3)] flex flex-col items-start justify-start p-[2rem] gap-[1.5rem] text-left text-[1.5rem] text-gray1-200 font-noto-sans">
+      <div className="self-stretch flex flex-row items-center justify-start gap-[2.125rem]">
         <div className="flex-1 relative font-semibold">{`Applied Student’s `}</div>
         <div className="flex flex-row items-center justify-start gap-[0.875rem] text-center text-[0.75rem]">
           <div className="rounded-lg flex flex-row items-center justify-start py-[0.5rem] px-[1.25rem] gap-[0.5rem] border-[1px] border-solid border-primary-1">
@@ -27,18 +24,15 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90rem] bg-white flex flex-col items-start justify-start text-center text-grey-1 font-poppins">
-        <div className="self-stretch flex flex-row items-center justify-start text-left text-[0.813rem] font-light-button-2-button-default border-[1px] border-solid border-gainsboro-100">
-          <div className="flex flex-row items-center justify-start py-[0.938rem] pr-[0.625rem] pl-[1.25rem]">
-            <StateNotChecked
-              selectAllCourses={false}
-              stateNotCheckedGap="0.375rem"
-              formCheckboxButtonWidth="1.125rem"
-              formCheckboxButtonHeight="1.125rem"
-              textWidth="1.938rem"
-              textFontSize="0.938rem"
-              textLineHeight="1.375rem"
-            />
+      <div className="w-[90rem] bg-white flex flex-col items-start justify-start text-[0.938rem] text-primary-1 font-light-button-2-button-default">
+        <div className="self-stretch flex flex-row items-center justify-start text-[0.813rem] border-[1px] border-solid border-gainsboro-100">
+          <div className="flex flex-row items-center justify-start py-[0.938rem] pr-[0.625rem] pl-[1.25rem] text-[0.938rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
           </div>
           <div className="self-stretch w-[13.063rem] flex flex-row items-center justify-start py-[0.5rem] px-[1.25rem] box-border gap-[0.25rem]">
             <div className="flex-1 relative tracking-[1px] uppercase font-semibold text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.1),_rgba(255,_255,_255,_0.1)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
@@ -93,59 +87,24 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-          <CellTypeCheckbox
-            selectCourse={false}
-            cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-            formCheckboxGap="0.375rem"
-            formCheckboxButtonWidth="1.125rem"
-            formCheckboxButtonHeight="1.125rem"
-            textWidth="1.938rem"
-            textFontSize="0.938rem"
-            textLineHeight="1.375rem"
-            cellTypeCheckboxHeight="unset"
-            cellTypeCheckboxWidth="unset"
-            cellTypeCheckboxDisplay="flex"
-            cellTypeCheckboxFlexDirection="row"
-            cellTypeCheckboxMargin="unset"
-            cellTypeCheckboxAlignSelf="unset"
-            cellTypeCheckboxFlex="unset"
-            selectAllCourses={false}
-          />
-          <CellTypeText
-            email="23-02-2024"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="13.063rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="1"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#ff6477"
-            tableCellFontWeight="unset"
-            tableCellTextDecoration="unset"
-          />
-          <CellTypeText
-            email="Transforming the landscape of Education with revolutionary technology"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="34.813rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="unset"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#000"
-            tableCellFontWeight="500"
-            tableCellTextDecoration="unset"
-          />
-          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border">
+          <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
+          </div>
+          <div className="w-[13.063rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+            <div className="flex-1 relative leading-[1.375rem]">23-02-2024</div>
+          </div>
+          <div className="w-[34.813rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border text-black">
+            <div className="relative leading-[1.375rem] font-medium">
+              Transforming the landscape of Education with revolutionary
+              technology
+            </div>
+          </div>
+          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border text-center text-[0.75rem] text-grey-1 font-poppins">
             <div className="flex flex-row items-center justify-start py-[0rem] px-[1.25rem] gap-[0.625rem]">
               <div className="rounded-lg bg-lavenderblush flex flex-row items-center justify-center py-[0.5rem] px-[1rem]">
                 <div className="relative leading-[116%] font-semibold">
@@ -193,59 +152,24 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-          <CellTypeCheckbox
-            selectCourse={false}
-            cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-            formCheckboxGap="0.375rem"
-            formCheckboxButtonWidth="1.125rem"
-            formCheckboxButtonHeight="1.125rem"
-            textWidth="1.938rem"
-            textFontSize="0.938rem"
-            textLineHeight="1.375rem"
-            cellTypeCheckboxHeight="unset"
-            cellTypeCheckboxWidth="unset"
-            cellTypeCheckboxDisplay="flex"
-            cellTypeCheckboxFlexDirection="row"
-            cellTypeCheckboxMargin="unset"
-            cellTypeCheckboxAlignSelf="unset"
-            cellTypeCheckboxFlex="unset"
-            selectAllCourses={false}
-          />
-          <CellTypeText
-            email="23-02-2024"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="13.063rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="1"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#ff6477"
-            tableCellFontWeight="unset"
-            tableCellTextDecoration="unset"
-          />
-          <CellTypeText
-            email="Transforming the landscape of Education with revolutionary technology"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="34.813rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="unset"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#000"
-            tableCellFontWeight="500"
-            tableCellTextDecoration="unset"
-          />
-          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border">
+          <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
+          </div>
+          <div className="w-[13.063rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+            <div className="flex-1 relative leading-[1.375rem]">23-02-2024</div>
+          </div>
+          <div className="w-[34.813rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border text-black">
+            <div className="relative leading-[1.375rem] font-medium">
+              Transforming the landscape of Education with revolutionary
+              technology
+            </div>
+          </div>
+          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border text-center text-[0.75rem] text-grey-1 font-poppins">
             <div className="flex flex-row items-center justify-start py-[0rem] px-[1.25rem] gap-[0.625rem]">
               <div className="rounded-lg bg-lavenderblush flex flex-row items-center justify-center py-[0.5rem] px-[1rem]">
                 <div className="relative leading-[116%] font-semibold">
@@ -293,59 +217,24 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-          <CellTypeCheckbox
-            selectCourse={false}
-            cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-            formCheckboxGap="0.375rem"
-            formCheckboxButtonWidth="1.125rem"
-            formCheckboxButtonHeight="1.125rem"
-            textWidth="1.938rem"
-            textFontSize="0.938rem"
-            textLineHeight="1.375rem"
-            cellTypeCheckboxHeight="unset"
-            cellTypeCheckboxWidth="unset"
-            cellTypeCheckboxDisplay="flex"
-            cellTypeCheckboxFlexDirection="row"
-            cellTypeCheckboxMargin="unset"
-            cellTypeCheckboxAlignSelf="unset"
-            cellTypeCheckboxFlex="unset"
-            selectAllCourses={false}
-          />
-          <CellTypeText
-            email="23-02-2024"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="13.063rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="1"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#ff6477"
-            tableCellFontWeight="unset"
-            tableCellTextDecoration="unset"
-          />
-          <CellTypeText
-            email="Transforming the landscape of Education with revolutionary technology"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="34.813rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="unset"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#000"
-            tableCellFontWeight="500"
-            tableCellTextDecoration="unset"
-          />
-          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border">
+          <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
+          </div>
+          <div className="w-[13.063rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+            <div className="flex-1 relative leading-[1.375rem]">23-02-2024</div>
+          </div>
+          <div className="w-[34.813rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border text-black">
+            <div className="relative leading-[1.375rem] font-medium">
+              Transforming the landscape of Education with revolutionary
+              technology
+            </div>
+          </div>
+          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border text-center text-[0.75rem] text-grey-1 font-poppins">
             <div className="flex flex-row items-center justify-start py-[0rem] px-[1.25rem] gap-[0.625rem]">
               <div className="rounded-lg bg-lavenderblush flex flex-row items-center justify-center py-[0.5rem] px-[1rem]">
                 <div className="relative leading-[116%] font-semibold">
@@ -393,59 +282,24 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-          <CellTypeCheckbox
-            selectCourse={false}
-            cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-            formCheckboxGap="0.375rem"
-            formCheckboxButtonWidth="1.125rem"
-            formCheckboxButtonHeight="1.125rem"
-            textWidth="1.938rem"
-            textFontSize="0.938rem"
-            textLineHeight="1.375rem"
-            cellTypeCheckboxHeight="unset"
-            cellTypeCheckboxWidth="unset"
-            cellTypeCheckboxDisplay="flex"
-            cellTypeCheckboxFlexDirection="row"
-            cellTypeCheckboxMargin="unset"
-            cellTypeCheckboxAlignSelf="unset"
-            cellTypeCheckboxFlex="unset"
-            selectAllCourses={false}
-          />
-          <CellTypeText
-            email="23-02-2024"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="13.063rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="1"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#ff6477"
-            tableCellFontWeight="unset"
-            tableCellTextDecoration="unset"
-          />
-          <CellTypeText
-            email="Transforming the landscape of Education with revolutionary technology"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="34.813rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="unset"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#000"
-            tableCellFontWeight="500"
-            tableCellTextDecoration="unset"
-          />
-          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border">
+          <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
+          </div>
+          <div className="w-[13.063rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+            <div className="flex-1 relative leading-[1.375rem]">23-02-2024</div>
+          </div>
+          <div className="w-[34.813rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border text-black">
+            <div className="relative leading-[1.375rem] font-medium">
+              Transforming the landscape of Education with revolutionary
+              technology
+            </div>
+          </div>
+          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border text-center text-[0.75rem] text-grey-1 font-poppins">
             <div className="flex flex-row items-center justify-start py-[0rem] px-[1.25rem] gap-[0.625rem]">
               <div className="rounded-lg bg-lavenderblush flex flex-row items-center justify-center py-[0.5rem] px-[1rem]">
                 <div className="relative leading-[116%] font-semibold">
@@ -493,59 +347,24 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-          <CellTypeCheckbox
-            selectCourse={false}
-            cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-            formCheckboxGap="0.375rem"
-            formCheckboxButtonWidth="1.125rem"
-            formCheckboxButtonHeight="1.125rem"
-            textWidth="1.938rem"
-            textFontSize="0.938rem"
-            textLineHeight="1.375rem"
-            cellTypeCheckboxHeight="unset"
-            cellTypeCheckboxWidth="unset"
-            cellTypeCheckboxDisplay="flex"
-            cellTypeCheckboxFlexDirection="row"
-            cellTypeCheckboxMargin="unset"
-            cellTypeCheckboxAlignSelf="unset"
-            cellTypeCheckboxFlex="unset"
-            selectAllCourses={false}
-          />
-          <CellTypeText
-            email="23-02-2024"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="13.063rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="1"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#ff6477"
-            tableCellFontWeight="unset"
-            tableCellTextDecoration="unset"
-          />
-          <CellTypeText
-            email="Transforming the landscape of Education with revolutionary technology"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="34.813rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="unset"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#000"
-            tableCellFontWeight="500"
-            tableCellTextDecoration="unset"
-          />
-          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border">
+          <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
+          </div>
+          <div className="w-[13.063rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+            <div className="flex-1 relative leading-[1.375rem]">23-02-2024</div>
+          </div>
+          <div className="w-[34.813rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border text-black">
+            <div className="relative leading-[1.375rem] font-medium">
+              Transforming the landscape of Education with revolutionary
+              technology
+            </div>
+          </div>
+          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border text-center text-[0.75rem] text-grey-1 font-poppins">
             <div className="flex flex-row items-center justify-start py-[0rem] px-[1.25rem] gap-[0.625rem]">
               <div className="rounded-lg bg-lavenderblush flex flex-row items-center justify-center py-[0.5rem] px-[1rem]">
                 <div className="relative leading-[116%] font-semibold">
@@ -593,59 +412,24 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-          <CellTypeCheckbox
-            selectCourse={false}
-            cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-            formCheckboxGap="0.375rem"
-            formCheckboxButtonWidth="1.125rem"
-            formCheckboxButtonHeight="1.125rem"
-            textWidth="1.938rem"
-            textFontSize="0.938rem"
-            textLineHeight="1.375rem"
-            cellTypeCheckboxHeight="unset"
-            cellTypeCheckboxWidth="unset"
-            cellTypeCheckboxDisplay="flex"
-            cellTypeCheckboxFlexDirection="row"
-            cellTypeCheckboxMargin="unset"
-            cellTypeCheckboxAlignSelf="unset"
-            cellTypeCheckboxFlex="unset"
-            selectAllCourses={false}
-          />
-          <CellTypeText
-            email="23-02-2024"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="13.063rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="1"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#ff6477"
-            tableCellFontWeight="unset"
-            tableCellTextDecoration="unset"
-          />
-          <CellTypeText
-            email="Transforming the landscape of Education with revolutionary technology"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="34.813rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="unset"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#000"
-            tableCellFontWeight="500"
-            tableCellTextDecoration="unset"
-          />
-          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border">
+          <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
+          </div>
+          <div className="w-[13.063rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+            <div className="flex-1 relative leading-[1.375rem]">23-02-2024</div>
+          </div>
+          <div className="w-[34.813rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border text-black">
+            <div className="relative leading-[1.375rem] font-medium">
+              Transforming the landscape of Education with revolutionary
+              technology
+            </div>
+          </div>
+          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border text-center text-[0.75rem] text-grey-1 font-poppins">
             <div className="flex flex-row items-center justify-start py-[0rem] px-[1.25rem] gap-[0.625rem]">
               <div className="rounded-lg bg-lavenderblush flex flex-row items-center justify-center py-[0.5rem] px-[1rem]">
                 <div className="relative leading-[116%] font-semibold">
@@ -693,59 +477,24 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-          <CellTypeCheckbox
-            selectCourse={false}
-            cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-            formCheckboxGap="0.375rem"
-            formCheckboxButtonWidth="1.125rem"
-            formCheckboxButtonHeight="1.125rem"
-            textWidth="1.938rem"
-            textFontSize="0.938rem"
-            textLineHeight="1.375rem"
-            cellTypeCheckboxHeight="unset"
-            cellTypeCheckboxWidth="unset"
-            cellTypeCheckboxDisplay="flex"
-            cellTypeCheckboxFlexDirection="row"
-            cellTypeCheckboxMargin="unset"
-            cellTypeCheckboxAlignSelf="unset"
-            cellTypeCheckboxFlex="unset"
-            selectAllCourses={false}
-          />
-          <CellTypeText
-            email="23-02-2024"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="13.063rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="1"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#ff6477"
-            tableCellFontWeight="unset"
-            tableCellTextDecoration="unset"
-          />
-          <CellTypeText
-            email="Transforming the landscape of Education with revolutionary technology"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="34.813rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="unset"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#000"
-            tableCellFontWeight="500"
-            tableCellTextDecoration="unset"
-          />
-          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border">
+          <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
+          </div>
+          <div className="w-[13.063rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+            <div className="flex-1 relative leading-[1.375rem]">23-02-2024</div>
+          </div>
+          <div className="w-[34.813rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border text-black">
+            <div className="relative leading-[1.375rem] font-medium">
+              Transforming the landscape of Education with revolutionary
+              technology
+            </div>
+          </div>
+          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border text-center text-[0.75rem] text-grey-1 font-poppins">
             <div className="flex flex-row items-center justify-start py-[0rem] px-[1.25rem] gap-[0.625rem]">
               <div className="rounded-lg bg-lavenderblush flex flex-row items-center justify-center py-[0.5rem] px-[1rem]">
                 <div className="relative leading-[116%] font-semibold">
@@ -793,59 +542,24 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-          <CellTypeCheckbox
-            selectCourse={false}
-            cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-            formCheckboxGap="0.375rem"
-            formCheckboxButtonWidth="1.125rem"
-            formCheckboxButtonHeight="1.125rem"
-            textWidth="1.938rem"
-            textFontSize="0.938rem"
-            textLineHeight="1.375rem"
-            cellTypeCheckboxHeight="unset"
-            cellTypeCheckboxWidth="unset"
-            cellTypeCheckboxDisplay="flex"
-            cellTypeCheckboxFlexDirection="row"
-            cellTypeCheckboxMargin="unset"
-            cellTypeCheckboxAlignSelf="unset"
-            cellTypeCheckboxFlex="unset"
-            selectAllCourses={false}
-          />
-          <CellTypeText
-            email="23-02-2024"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="13.063rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="1"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#ff6477"
-            tableCellFontWeight="unset"
-            tableCellTextDecoration="unset"
-          />
-          <CellTypeText
-            email="Transforming the landscape of Education with revolutionary technology"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="34.813rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="unset"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#000"
-            tableCellFontWeight="500"
-            tableCellTextDecoration="unset"
-          />
-          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border">
+          <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
+          </div>
+          <div className="w-[13.063rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+            <div className="flex-1 relative leading-[1.375rem]">23-02-2024</div>
+          </div>
+          <div className="w-[34.813rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border text-black">
+            <div className="relative leading-[1.375rem] font-medium">
+              Transforming the landscape of Education with revolutionary
+              technology
+            </div>
+          </div>
+          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border text-center text-[0.75rem] text-grey-1 font-poppins">
             <div className="flex flex-row items-center justify-start py-[0rem] px-[1.25rem] gap-[0.625rem]">
               <div className="rounded-lg bg-lavenderblush flex flex-row items-center justify-center py-[0.5rem] px-[1rem]">
                 <div className="relative leading-[116%] font-semibold">
@@ -893,59 +607,24 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
-          <CellTypeCheckbox
-            selectCourse={false}
-            cellTypeCheckboxPadding="1.25rem 0.625rem 1.25rem 1.25rem"
-            formCheckboxGap="0.375rem"
-            formCheckboxButtonWidth="1.125rem"
-            formCheckboxButtonHeight="1.125rem"
-            textWidth="1.938rem"
-            textFontSize="0.938rem"
-            textLineHeight="1.375rem"
-            cellTypeCheckboxHeight="unset"
-            cellTypeCheckboxWidth="unset"
-            cellTypeCheckboxDisplay="flex"
-            cellTypeCheckboxFlexDirection="row"
-            cellTypeCheckboxMargin="unset"
-            cellTypeCheckboxAlignSelf="unset"
-            cellTypeCheckboxFlex="unset"
-            selectAllCourses={false}
-          />
-          <CellTypeText
-            email="23-02-2024"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="13.063rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="1"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#ff6477"
-            tableCellFontWeight="unset"
-            tableCellTextDecoration="unset"
-          />
-          <CellTypeText
-            email="Transforming the landscape of Education with revolutionary technology"
-            cellTypeTextPadding="1.125rem 1.25rem"
-            cellTypeTextWidth="34.813rem"
-            cellTypeTextHeight="4.938rem"
-            tableCellFontSize="0.938rem"
-            tableCellLineHeight="1.375rem"
-            tableCellFlex="unset"
-            cellTypeTextFlex="unset"
-            cellTypeTextOpacity="unset"
-            tableCellBackground="unset"
-            tableCellWebkitBackgroundClip="unset"
-            tableCellWebkitTextFillColor="unset"
-            tableCellColor="#000"
-            tableCellFontWeight="500"
-            tableCellTextDecoration="unset"
-          />
-          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border">
+          <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
+            <div className="flex flex-row items-center justify-start gap-[0.375rem]">
+              <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
+              <div className="w-[1.938rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] hidden">
+                Text
+              </div>
+            </div>
+          </div>
+          <div className="w-[13.063rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border">
+            <div className="flex-1 relative leading-[1.375rem]">23-02-2024</div>
+          </div>
+          <div className="w-[34.813rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[1.25rem] box-border text-black">
+            <div className="relative leading-[1.375rem] font-medium">
+              Transforming the landscape of Education with revolutionary
+              technology
+            </div>
+          </div>
+          <div className="w-[39.125rem] h-[4.938rem] flex flex-row items-center justify-start py-[1.125rem] px-[0rem] box-border text-center text-[0.75rem] text-grey-1 font-poppins">
             <div className="flex flex-row items-center justify-start py-[0rem] px-[1.25rem] gap-[0.625rem]">
               <div className="rounded-lg bg-lavenderblush flex flex-row items-center justify-center py-[0.5rem] px-[1rem]">
                 <div className="relative leading-[116%] font-semibold">
@@ -993,7 +672,7 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className="self-stretch flex flex-row items-center justify-start gap-[34.063rem] text-right text-darkgray-100">
+      <div className="self-stretch flex flex-row items-center justify-start gap-[34.063rem] text-right text-[0.75rem] text-darkgray-100">
         <div className="relative">Showing 1 to 10 of 57 entries</div>
         <div className="w-[16.188rem] relative h-[1.5rem] text-gray1-200">
           <div className="absolute h-full w-[9.27%] top-[0%] right-[64.86%] bottom-[0%] left-[25.87%] text-white">

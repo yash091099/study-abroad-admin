@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import TypeSecondarySizeNormalS from "./type-secondary-size-normal-s";
 
 const ChangePassword: FunctionComponent = () => {
   return (
@@ -39,29 +38,21 @@ const ChangePassword: FunctionComponent = () => {
                 </div>
               </div>
             </div>
-            <TypeSecondarySizeNormalS
-              icon="/icon1.svg"
-              text="Update Password"
-              icon1="/icon1.svg"
-              showLeftIcon={false}
-              showRightIcon={false}
-              typeSecondarySizeNormalSBackgroundColor="#ff6477"
-              typeSecondarySizeNormalSPadding="0rem 1.5rem"
-              typeSecondarySizeNormalSBorder="unset"
-              typeSecondarySizeNormalSGap="0.75rem"
-              typeSecondarySizeNormalSWidth="30.125rem"
-              typeSecondarySizeNormalSHeight="2.75rem"
-              iconMinHeight="unset"
-              iconWidth="1rem"
-              iconHeight="1rem"
-              textFontFamily="'Noto Sans'"
-              textColor="#121212"
-              textMinWidth="unset"
-              textFontSize="0.875rem"
-              iconMinHeight1="unset"
-              iconWidth1="1rem"
-              iconHeight1="1rem"
-            />
+            <div className="w-[30.125rem] rounded-lg bg-primary-1 h-[2.75rem] flex flex-row items-center justify-center py-[0rem] px-[1.5rem] box-border gap-[0.75rem] text-[0.875rem] font-noto-sans">
+              <img
+                className="w-[1rem] relative h-[1rem] overflow-hidden shrink-0 hidden"
+                alt=""
+                src="/icon1.svg"
+              />
+              <div className="relative leading-[116%] font-semibold">
+                Update Password
+              </div>
+              <img
+                className="w-[1rem] relative h-[1rem] overflow-hidden shrink-0 hidden"
+                alt=""
+                src="/icon1.svg"
+              />
+            </div>
           </div>
         </div>
       </div>

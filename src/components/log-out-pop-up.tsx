@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import TypeSecondarySizeNormalS from "./type-secondary-size-normal-s";
 
 const LogOutPopUp: FunctionComponent = () => {
   return (
@@ -21,54 +20,38 @@ const LogOutPopUp: FunctionComponent = () => {
         </div>
         <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[10px]">
           <button className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 flex flex-col items-center justify-start min-w-[132px]">
-            <TypeSecondarySizeNormalS
-              icon="/icon.svg"
-              text="Cancel"
-              icon1="/icon.svg"
-              showLeftIcon={false}
-              showRightIcon={false}
-              typeSecondarySizeNormalSBackgroundColor="unset"
-              typeSecondarySizeNormalSPadding="14px 77px"
-              typeSecondarySizeNormalSBorder="1px solid #ff6477"
-              typeSecondarySizeNormalSGap="12px"
-              typeSecondarySizeNormalSWidth="unset"
-              typeSecondarySizeNormalSHeight="unset"
-              iconMinHeight="16px"
-              iconWidth="16px"
-              iconHeight="16px"
-              textFontFamily="'Noto Sans'"
-              textColor="#121212"
-              textMinWidth="46px"
-              textFontSize="14px"
-              iconMinHeight1="16px"
-              iconWidth1="16px"
-              iconHeight1="16px"
-            />
+            <div className="rounded-lg flex flex-row items-center justify-center py-3.5 px-[77px] gap-[12px] border-[1px] border-solid border-primary-1">
+              <img
+                className="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                alt=""
+                src="/icon.svg"
+              />
+              <div className="relative text-sm leading-[116%] font-semibold font-noto-sans text-gray1-200 text-left inline-block min-w-[46px]">
+                Cancel
+              </div>
+              <img
+                className="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                alt=""
+                src="/icon.svg"
+              />
+            </div>
           </button>
           <button className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 flex flex-col items-center justify-start min-w-[132px]">
-            <TypeSecondarySizeNormalS
-              icon="/icon1.svg"
-              text="Log Out"
-              icon1="/icon1.svg"
-              showLeftIcon={false}
-              showRightIcon={false}
-              typeSecondarySizeNormalSBackgroundColor="#ff6477"
-              typeSecondarySizeNormalSPadding="14px 74px"
-              typeSecondarySizeNormalSBorder="unset"
-              typeSecondarySizeNormalSGap="12px"
-              typeSecondarySizeNormalSWidth="unset"
-              typeSecondarySizeNormalSHeight="unset"
-              iconMinHeight="16px"
-              iconWidth="16px"
-              iconHeight="16px"
-              textFontFamily="'Noto Sans'"
-              textColor="#121212"
-              textMinWidth="55px"
-              textFontSize="14px"
-              iconMinHeight1="16px"
-              iconWidth1="16px"
-              iconHeight1="16px"
-            />
+            <div className="rounded-lg bg-primary-1 flex flex-row items-center justify-center py-3.5 px-[74px] gap-[12px]">
+              <img
+                className="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                alt=""
+                src="/icon1.svg"
+              />
+              <div className="relative text-sm leading-[116%] font-semibold font-noto-sans text-gray1-200 text-left inline-block min-w-[55px]">
+                Log Out
+              </div>
+              <img
+                className="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                alt=""
+                src="/icon1.svg"
+              />
+            </div>
           </button>
         </div>
       </section>
