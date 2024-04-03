@@ -5,7 +5,7 @@ const Login: FunctionComponent = () => {
     <div className="w-full relative h-[67.5rem] text-left text-[2rem] text-gray1-200 font-semi-bold-11">
       <div className="absolute top-[0rem] left-[0rem] bg-white w-[120rem] h-[67.5rem] overflow-hidden flex flex-row items-center justify-start gap-[15.5rem]">
         <img
-          className="w-[58.688rem] relative h-[67.5rem] overflow-hidden shrink-0"
+          className="w-[40.688rem] relative h-[40.5rem] overflow-hidden shrink-0"
           alt=""
           src="/hreo-side.svg"
         />

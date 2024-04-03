@@ -94,30 +94,18 @@ module.exports = {
       inherit: "inherit",
     },
     screens: {
-      mq1800: {
-        raw: "screen and (max-width: 1800px)",
-      },
-      mq1650: {
-        raw: "screen and (max-width: 1650px)",
-      },
-      mq1350: {
-        raw: "screen and (max-width: 1350px)",
-      },
-      mq1300: {
-        raw: "screen and (max-width: 1300px)",
-      },
-      lg: {
-        max: "1200px",
-      },
-      mq900: {
-        raw: "screen and (max-width: 900px)",
-      },
-      mq450: {
-        raw: "screen and (max-width: 450px)",
-      },
-      mq416: {
-        raw: "screen and (max-width: 416px)",
-      },
+      '2xl': {'max': '1535px'},  // Tailwind's default '2xl'
+      'xl': {'max': '1279px'},   // Tailwind's default 'xl'
+      'lg': {'max': '1023px'},   // Tailwind's default 'lg'
+      'md': {'max': '767px'},    // Tailwind's default 'md'
+      'sm': {'max': '639px'},    // Tailwind's default 'sm'
+      'mq1800': {'min': '1801px'}, // Custom breakpoint for large screens
+      'mq1650': {'max': '1650px'},
+      'mq1350': {'max': '1350px'},
+      'mq1300': {'max': '1300px'},
+      'mq900': {'max': '900px'},
+      'mq450': {'max': '450px'},
+      'mq416': {'max': '416px'},
     },
   },
   corePlugins: {

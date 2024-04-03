@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 const AppliedStudentList: FunctionComponent = () => {
   return (
-    <div className="self-stretch rounded-lg bg-white shadow-[0px_4px_18px_rgba(75,_70,_92,_0.1),_0px_2px_4px_rgba(165,_163,_174,_0.3)] flex flex-col items-start justify-start p-[2rem] gap-[1.5rem] text-left text-[1.5rem] text-gray1-200 font-noto-sans">
+    <div style={{overflowX: 'auto',whiteSpace: 'nowrap'}} className="self-stretch rounded-lg bg-white shadow-[0px_4px_18px_rgba(75,_70,_92,_0.1),_0px_2px_4px_rgba(165,_163,_174,_0.3)] flex flex-col items-start justify-start p-[2rem] gap-[1.5rem] text-left text-[1.5rem] text-gray1-200 font-noto-sans">
       <div className="self-stretch flex flex-row items-center justify-start gap-[2.125rem]">
         <div className="flex-1 relative font-semibold">{`Applied Student’s `}</div>
         <div className="rounded-lg flex flex-row items-center justify-start py-[0.5rem] px-[1.5rem] gap-[0.25rem] text-center text-[0.75rem] border-[1px] border-solid border-primary-1">
@@ -15,7 +15,7 @@ const AppliedStudentList: FunctionComponent = () => {
         </div>
       </div>
       <div className="w-[141.188rem] bg-white flex flex-col items-start justify-start text-[0.938rem] text-primary-1 font-light-button-2-button-default">
-        <div className="self-stretch flex flex-row items-center justify-start text-[0.813rem] border-[1px] border-solid border-gainsboro-100">
+        <div  className="self-stretch w-[full] max-w-full flex flex-row items-center justify-start text-[0.813rem] border-[1px] border-solid border-gainsboro-100">
           <div className="flex flex-row items-center justify-start py-[0.938rem] pr-[0.625rem] pl-[1.25rem] text-[0.938rem]">
             <div className="flex flex-row items-center justify-start gap-[0.375rem]">
               <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />

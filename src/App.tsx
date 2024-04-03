@@ -140,7 +140,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<MainAdminScreen />} />
       <Route path="/reports" element={<Reports />} />
       <Route path="/dashboard" element={<MainAdminScreen />} />
       <Route path="/course-management" element={<CourseManagement />} />
