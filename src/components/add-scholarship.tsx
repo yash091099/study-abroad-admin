@@ -7,7 +7,7 @@ const AddScholarship: FunctionComponent = () => {
   return (
     <div className="w-[1920px] bg-whitesmoke-200 max-w-full h-[1080px] overflow-hidden text-left text-mini font-light-button-2-button-default">
       <div className="absolute top-[-2px] left-[0px] flex flex-row items-start justify-start gap-[32px]">
-        <SideMenu
+        {/* <SideMenu
           sideMenuWidth="360px"
           sideMenuHeight="1083px"
           sideMenuPadding="0px 0px 10px"
@@ -84,7 +84,7 @@ const AddScholarship: FunctionComponent = () => {
           listDetailsIconMinHeight4="unset"
           listDetailsIconMinHeight5="unset"
           sideMenuAlignSelf="unset"
-        />
+        /> */}
         <div className="w-[1472px] h-[1083px] flex flex-col items-start justify-start py-4 px-0 box-border gap-[24px]">
           <Navbar1
             search="/search.svg"

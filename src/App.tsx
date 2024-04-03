@@ -6,7 +6,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import Login from "./pages/login";
-import Notifications from "./pages/notifications";
 import Reports from "./pages/reports";
 import MainAdminScreen from "./pages/main-admin-screen";
 import CourseManagement from "./pages/course-management";
@@ -25,6 +24,7 @@ import UserManagement from "./pages/user-management";
 import AdminChangePassword from "./pages/admin-change-password";
 import BlogManagement from "./pages/blog-management";
 import ApplicationManagement from "./pages/application-management";
+import InstituteManagement from "./pages/user-management";
 
 function App() {
   const action = useNavigationType();
@@ -141,13 +141,12 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/notifications" element={<Notifications />} />
       <Route path="/reports" element={<Reports />} />
-      <Route path="/main-admin-screen" element={<MainAdminScreen />} />
+      <Route path="/dashboard" element={<MainAdminScreen />} />
       <Route path="/course-management" element={<CourseManagement />} />
       <Route path="/add" element={<Add />} />
       <Route path="/addcourse" element={<AddCourse />} />
-      <Route path="/vendor-management" element={<VendorManagement />} />
+      <Route path="/student-management" element={<VendorManagement />} />
       <Route
         path="/user-inner-details-docx"
         element={<UserInnerDetailsDocx />}
@@ -174,14 +173,14 @@ function App() {
         element={<ApplicationStatusPage />}
       />
       <Route
-        path="/scholarship-management"
+        path="/scholarship"
         element={<ScholarshipManagement />}
       />
-      <Route path="/user-management" element={<UserManagement />} />
+      <Route path="/institute-management" element={<InstituteManagement />} />
       <Route path="/admin-change-password" element={<AdminChangePassword />} />
-      <Route path="/blogmanagement" element={<BlogManagement />} />
+      <Route path="/blog-management" element={<BlogManagement />} />
       <Route
-        path="/applicationmanagement"
+        path="/applications"
         element={<ApplicationManagement />}
       />
     </Routes>

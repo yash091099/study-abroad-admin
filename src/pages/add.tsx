@@ -6,7 +6,7 @@ import AddInstituteForm from "../components/add-institute-form";
 const Add: FunctionComponent = () => {
   return (
     <div className="w-full relative bg-whitesmoke-200 overflow-hidden flex flex-row items-start justify-start pt-[0.875rem] px-[0rem] pb-[0rem] box-border gap-[2rem] tracking-[normal] mq1800:flex-wrap mq900:gap-[2rem_1rem]">
-      <SideMenu
+      {/* <SideMenu
         sideMenuWidth="22.5rem"
         sideMenuHeight="unset"
         sideMenuPadding="0rem 0rem 80.375rem"
@@ -83,14 +83,10 @@ const Add: FunctionComponent = () => {
         listDetailsIconMinHeight4="1.5rem"
         listDetailsIconMinHeight5="1.5rem"
         sideMenuAlignSelf="unset"
-      />
+      /> */}
       <main className="w-[92rem] flex flex-col items-start justify-start gap-[1.5rem] max-w-full shrink-0">
         <Navbar />
         <AddInstituteForm />
-        <footer className="self-stretch rounded-md overflow-hidden flex flex-row items-start justify-center py-[0.813rem] px-[1.25rem] box-border max-w-full text-left text-[0.938rem] font-light-button-2-button-default">
-          <div className="w-[27.563rem] relative leading-[1.375rem] text-transparent !bg-clip-text [background:linear-gradient(rgba(255,_255,_255,_0.2),_rgba(255,_255,_255,_0.2)),_#4b465c] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] flex items-center max-w-full">{`Copyright 2023 -
-Company Name. All rights reserved. `}</div>
-        </footer>
       </main>
     </div>
   );

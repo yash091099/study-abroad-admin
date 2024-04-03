@@ -7,7 +7,7 @@ const ApplicationStatusPage: FunctionComponent = () => {
   return (
     <div className="w-full relative bg-whitesmoke-200 h-[77.25rem] overflow-hidden">
       <div className="absolute top-[0rem] left-[0rem] w-[116.5rem] flex flex-row items-start justify-start gap-[2rem]">
-        <SideMenu
+        {/* <SideMenu
           sideMenuWidth="22.5rem"
           sideMenuHeight="108.563rem"
           sideMenuPadding="0rem 0rem 0.625rem"
@@ -84,7 +84,7 @@ const ApplicationStatusPage: FunctionComponent = () => {
           listDetailsIconMinHeight4="unset"
           listDetailsIconMinHeight5="unset"
           sideMenuAlignSelf="unset"
-        />
+        /> */}
         <div className="w-[88.313rem] h-[77.25rem] flex flex-col items-start justify-start py-[1rem] px-[0rem] box-border">
           <Navbar1
             search="/search.svg"

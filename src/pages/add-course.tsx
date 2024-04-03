@@ -7,7 +7,7 @@ const AddCourse: FunctionComponent = () => {
   return (
     <div className="w-full h-[79.063rem] relative bg-whitesmoke-200 overflow-hidden text-left text-[0.938rem] font-light-button-2-button-default">
       <div className="absolute top-[-0.125rem] left-[0rem] w-[120rem] h-[79.188rem] flex flex-row items-start justify-start gap-[2rem]">
-        <SideMenu
+        {/* <SideMenu
           sideMenuWidth="22.5rem"
           sideMenuHeight="unset"
           sideMenuPadding="0rem 0rem 0.625rem"
@@ -84,7 +84,7 @@ const AddCourse: FunctionComponent = () => {
           listDetailsIconMinHeight4="unset"
           listDetailsIconMinHeight5="unset"
           sideMenuAlignSelf="stretch"
-        />
+        /> */}
         <div className="w-[92rem] h-[79.188rem] flex flex-col items-start justify-start py-[1rem] px-[0rem] box-border gap-[1.5rem]">
           <Navbar1
             search="/search.svg"
