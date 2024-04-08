@@ -30,7 +30,7 @@ const AdminSideDashboard: FunctionComponent = () => {
             <div className="rounded-lg flex flex-col items-start justify-center">
               <div className="relative font-semibold">5000</div>
               <div className="flex flex-row items-center justify-start text-[1rem] text-gray1-200">
-                <div className="relative font-medium">{`Total no of application received `}</div>
+                <div className="relative font-medium">{`Total no of application `}</div>
               </div>
             </div>
           </div>
