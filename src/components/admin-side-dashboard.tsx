@@ -169,6 +169,7 @@ const AdminSideDashboard: FunctionComponent = () => {
         />
         <div className="absolute top-[11.719rem] left-[41.469rem] box-border w-[0.063rem] h-[5.5rem] border-r-[1px] border-solid border-gray-200" />
       </div>
+      {/* Recent Students  */}
       <div className="self-stretch rounded-lg bg-white shadow-[0px_4px_18px_rgba(75,_70,_92,_0.1),_0px_2px_4px_rgba(165,_163,_174,_0.3)] flex flex-col items-start justify-start p-[2rem] gap-[1.5rem] text-left">
         <div className="w-[60.188rem] flex flex-row items-center justify-start">
           <div className="flex-1 relative font-semibold">Recent Students</div>

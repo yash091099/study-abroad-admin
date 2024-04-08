@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 const AdsClickStatistics: FunctionComponent = () => {
   return (
-    <div className="self-stretch rounded-2xl bg-white flex flex-col items-start justify-start p-[2rem] gap-[1.5rem] text-center text-[1.5rem] text-gray1-200 font-noto-sans">
+    <div className="self-stretch rounded-2xl bg-white  flex flex-col items-start justify-start p-[2rem] gap-[1.5rem] text-center text-[1.5rem] text-gray1-200 font-noto-sans">
       <div className="relative font-semibold">{`Analytics & Reporting`}</div>
       <div className="w-[60.188rem] flex flex-row items-center justify-start gap-[27.5rem] text-left text-[1rem]">
         <div className="flex flex-col items-start justify-start gap-[0.125rem]">
@@ -13,7 +13,7 @@ const AdsClickStatistics: FunctionComponent = () => {
             6000+
           </div>
         </div>
-        <div className="flex flex-row items-start justify-start gap-[0.75rem] text-[0.875rem]">
+        <div className=" flex flex-row items-start justify-start gap-[0.75rem] text-[0.875rem]">
           <div className="rounded bg-whitesmoke-100 flex flex-row items-center justify-end py-[0.5rem] px-[1.5rem] gap-[1rem] opacity-[0.01]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-center justify-start">
@@ -48,7 +48,7 @@ const AdsClickStatistics: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-[84.25rem] relative h-[22.138rem] text-right text-[0.75rem]">
+      <div className="w-full relative h-[22.138rem] text-right text-[0.75rem]">
         <img
           className="absolute h-[66.01%] w-[94.38%] top-[4.35%] right-[0%] bottom-[29.64%] left-[5.62%] max-w-full overflow-hidden max-h-full"
           alt=""
