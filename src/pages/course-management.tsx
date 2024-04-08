@@ -146,6 +146,7 @@ const CourseManagement: FunctionComponent = () => {
             </div>
           </div>
         </div>
+        <div className="w-[100%]">
         <div className="flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
           <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
             <div className="flex flex-row items-center justify-start gap-[0.375rem]">
@@ -712,6 +713,7 @@ const CourseManagement: FunctionComponent = () => {
               src="/pencil.svg"
             />
           </div>
+        </div>
         </div>
       </div>
       <div className="self-stretch flex flex-row items-center justify-start gap-[34.063rem] text-right text-[0.75rem] text-darkgray-100">

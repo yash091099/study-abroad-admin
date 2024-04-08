@@ -24,8 +24,8 @@ const BlogList: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90rem] bg-white flex flex-col items-start justify-start text-[0.938rem] text-primary-1 font-light-button-2-button-default">
-        <div className="self-stretch flex flex-row items-center justify-start text-[0.813rem] border-[1px] border-solid border-gainsboro-100">
+      <div className="w-[90rem] bg-white flex flex-col items-start justify-start text-[0.938rem] text-primary-1 font-light-button-2-button-default w-[100%]">
+        <div className="self-stretch flex flex-row items-center justify-start text-[0.813rem] border-[1px] border-solid border-gainsboro-100 ">
           <div className="flex flex-row items-center justify-start py-[0.938rem] pr-[0.625rem] pl-[1.25rem] text-[0.938rem]">
             <div className="flex flex-row items-center justify-start gap-[0.375rem]">
               <div className="w-[1.125rem] rounded box-border h-[1.125rem] border-[1.5px] border-solid border-light-solid-color-gray-gray-400" />
@@ -86,6 +86,7 @@ const BlogList: FunctionComponent = () => {
             </div>
           </div>
         </div>
+        <div className="w-[100%]">
         <div className="self-stretch flex flex-row items-center justify-start border-r-[1px] border-solid border-gainsboro-100 border-b-[1px] border-l-[1px]">
           <div className="flex flex-row items-center justify-start py-[1.25rem] pr-[0.625rem] pl-[1.25rem]">
             <div className="flex flex-row items-center justify-start gap-[0.375rem]">
@@ -670,6 +671,8 @@ const BlogList: FunctionComponent = () => {
               src="/pencil.svg"
             />
           </div>
+        </div>
+          
         </div>
       </div>
       <div className="self-stretch flex flex-row items-center justify-start gap-[34.063rem] text-right text-[0.75rem] text-darkgray-100">
